@@ -1,6 +1,4 @@
-Debug/
-Release/
-
+common/
 *.opensdf
 *.sdf
 *.suo
