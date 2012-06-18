@@ -1,4 +1,7 @@
 common/
+DX9/
+DX11/
+ipch/
 *.opensdf
 *.sdf
 *.suo

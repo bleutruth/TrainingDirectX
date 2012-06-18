@@ -4,8 +4,14 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "common.vcxproj", "{F56F4626-92EE-4CE3-AA27-E37CA3A7D73F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DX9", "DX9.vcxproj", "{659C4850-7C7C-4A8A-9312-D32DB45062D3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F56F4626-92EE-4CE3-AA27-E37CA3A7D73F} = {F56F4626-92EE-4CE3-AA27-E37CA3A7D73F}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DX11", "DX11.vcxproj", "{1CD32E45-FF43-44E4-9DB4-39A171F9D1A1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F56F4626-92EE-4CE3-AA27-E37CA3A7D73F} = {F56F4626-92EE-4CE3-AA27-E37CA3A7D73F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
