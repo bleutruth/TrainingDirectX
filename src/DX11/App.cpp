@@ -5,7 +5,7 @@
 
 #include "App.h"	//	App
 
-App::App()
+App::App(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 }
 

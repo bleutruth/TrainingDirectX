@@ -6,11 +6,13 @@
 #ifndef DX9_APP_H_20120619
 #define DX9_APP_H_20120619
 
-class App{
+#include <AppBase.h>
+
+class App : public AppBase{
 
 public:
 
-	App();
+	App(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow);
 	virtual ~App();
 
 };

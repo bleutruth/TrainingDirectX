@@ -58,6 +58,7 @@
       <ForcedIncludeFiles>PreCompile.h</ForcedIncludeFiles>
       <AdditionalIncludeDirectories>..\src\MyLib;..\src\DX11</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

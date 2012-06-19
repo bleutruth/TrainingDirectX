@@ -13,6 +13,8 @@ public:
 	AppBase();
 	virtual ~AppBase();
 
+	//! アプリケーション実行
+	bool Run();
 };
 
 #endif	//	MYLIB_APPBASE_H_20120619
