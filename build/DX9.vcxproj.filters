@@ -9,9 +9,15 @@
     <ClCompile Include="..\src\DX9\Main.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\DX9\PreCompile.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\DX9\Main.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DX9\PreCompile.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
