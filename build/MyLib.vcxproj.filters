@@ -21,6 +21,9 @@
     <ClCompile Include="..\src\MyLib\RendererBase.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\MyLib\Util.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\MyLib\stdafx.h">
@@ -39,6 +42,9 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\src\MyLib\RendererBase.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MyLib\Util.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

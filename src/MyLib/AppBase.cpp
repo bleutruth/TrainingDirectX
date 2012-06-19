@@ -19,7 +19,7 @@ struct AppBase::Impl{
 	LPSTR lpCmdLine;
 	int nCmdShow;
 
-	std::auto_ptr<Window> mWindow;
+	std::auto_ptr<class Window> mWindow;
 };
 
 AppBase::Impl::Impl(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
@@ -35,7 +35,7 @@ bool AppBase::Impl::Init()
 {
 	static int const WINDOW_W = 800;
 	static int const WINDOW_H = 600;
-	mWindow.reset(new Window(hInstance, WINDOW_W, WINDOW_H));
+	mWindow.reset(new class Window(hInstance, WINDOW_W, WINDOW_H));
 	if(!mWindow->Init()){
 		return false;
 	}
@@ -104,6 +104,11 @@ bool AppBase::Init()
 		return false;
 	}
 	return true;
+}
+
+Window* AppBase::Window() const
+{
+	return mImpl->mWindow.get();
 }
 
 /*_________EOF_______________________________________________________________*/

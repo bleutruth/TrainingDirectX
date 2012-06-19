@@ -10,9 +10,18 @@ class RendererBase{
 
 public:
 
-	RendererBase();
+	RendererBase(HWND hWnd, int w, int h);
 	virtual ~RendererBase();
 
+	virtual bool Init() = 0;
+
+	HWND WindowHandle() const;
+	int ScreenSizeW() const;
+	int ScreenSizeH() const;
+
+private:
+	struct Impl;
+	std::auto_ptr<Impl> mImpl;
 };
 
 #endif	//	MYLIB_RENDERERBASE_H_20120620

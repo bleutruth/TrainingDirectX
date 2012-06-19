@@ -6,6 +6,8 @@
 #ifndef MYLIB_APPBASE_H_20120619
 #define MYLIB_APPBASE_H_20120619
 
+class Window;
+
 class AppBase{
 
 public:
@@ -16,9 +18,13 @@ public:
 	//! アプリケーション実行
 	bool Run();
 
-private:
+	Window* Window() const;
+
+protected:
 
 	virtual bool Init();
+
+private:
 
 	struct Impl;
 	std::auto_ptr<Impl> mImpl;

@@ -15,6 +15,12 @@ public:
 	App(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow);
 	virtual ~App();
 
+private:
+
+	virtual bool Init();
+
+	struct Impl;
+	std::auto_ptr<Impl> mImpl;
 };
 
 #endif	//	DX9_APP_H_20120619
