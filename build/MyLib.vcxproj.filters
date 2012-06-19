@@ -12,6 +12,9 @@
     <ClCompile Include="..\src\MyLib\MyLib.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\MyLib\AppBase.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\MyLib\stdafx.h">
@@ -21,6 +24,9 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\src\MyLib\MyLib.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MyLib\AppBase.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

@@ -12,12 +12,18 @@
     <ClCompile Include="..\src\DX11\PreCompile.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\DX11\App.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\DX11\Main.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\src\DX11\PreCompile.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DX11\App.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\MyLib\AppBase.cpp" />
     <ClCompile Include="..\src\MyLib\MyLib.cpp" />
     <ClCompile Include="..\src\MyLib\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -18,6 +19,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\src\MyLib\AppBase.h" />
     <ClInclude Include="..\src\MyLib\MyLib.h" />
     <ClInclude Include="..\src\MyLib\stdafx.h" />
     <ClInclude Include="..\src\MyLib\targetver.h" />
