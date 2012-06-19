@@ -56,7 +56,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>PreCompile.h</PrecompiledHeaderFile>
       <ForcedIncludeFiles>PreCompile.h</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>..\src\DX9</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\src\MyLib;..\src\DX9</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
