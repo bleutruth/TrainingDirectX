@@ -76,7 +76,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>PreCompile.h</PrecompiledHeaderFile>
       <ForcedIncludeFiles>PreCompile.h</ForcedIncludeFiles>
-      <AdditionalIncludeDirectories>..\src\DX11</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\src\MyLib;..\src\DX11</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
