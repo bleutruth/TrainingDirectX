@@ -13,7 +13,7 @@ public:
 	RendererBase(HWND hWnd, int w, int h);
 	virtual ~RendererBase();
 
-	virtual bool Init() = 0;
+	virtual bool Init(){ return true; }
 
 	HWND WindowHandle() const;
 	int ScreenSizeW() const;

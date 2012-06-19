@@ -96,4 +96,28 @@ bool Renderer::Init()
 	return mImpl->Init(WindowHandle(), ScreenSizeW(), ScreenSizeH());
 }
 
+void Renderer::Clear()
+{
+	assert(mImpl->mDev);
+	mImpl->mDev->Clear(0, 0, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER, D3DCOLOR_RGBA(0, 0, 0, 255), 1.0f, 0);
+}
+
+void Renderer::Swap()
+{
+	assert(mImpl->mDev);
+	mImpl->mDev->Present(0, 0, 0, 0);
+}
+
+void Renderer::Begin()
+{
+	assert(mImpl->mDev);
+	mImpl->mDev->BeginScene();
+}
+
+void Renderer::End()
+{
+	assert(mImpl->mDev);
+	mImpl->mDev->EndScene();
+}
+
 /*_________EOF_______________________________________________________________*/

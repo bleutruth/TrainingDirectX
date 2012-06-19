@@ -13,7 +13,7 @@ struct AppBase::Impl{
 	~Impl();
 
 	bool Init();
-	void MainLoop();
+	void MainLoop(AppBase* app);
 
 	HINSTANCE hInstance, hPrevInstance;
 	LPSTR lpCmdLine;
@@ -42,7 +42,7 @@ bool AppBase::Impl::Init()
 	return true;
 }
 
-void AppBase::Impl::MainLoop()
+void AppBase::Impl::MainLoop(AppBase* app)
 {
 	mWindow->Show(nCmdShow);
 
@@ -71,7 +71,7 @@ void AppBase::Impl::MainLoop()
 		else{
 //			mChangeScene = false;
 //			Update();
-//			Render();
+			app->Render();
 		}
 		Sleep(1);
 	}
@@ -94,7 +94,7 @@ bool AppBase::Run()
 		return false;
 	}
 
-	mImpl->MainLoop();
+	mImpl->MainLoop(this);
 	return true;
 }
 

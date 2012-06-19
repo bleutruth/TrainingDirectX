@@ -14,6 +14,7 @@ struct App::Impl{
 	~Impl();
 
 	bool Init(class Window const*);
+	void Render();
 
 	std::auto_ptr<Renderer> mRenderer;
 };
@@ -33,6 +34,14 @@ bool App::Impl::Init(class Window const* window)
 		return false;
 	}
 	return true;
+}
+
+void App::Impl::Render()
+{
+	mRenderer->Begin();
+	mRenderer->Clear();
+	mRenderer->End();
+	mRenderer->Swap();
 }
 
 /*___________________________________________________________________________*/
@@ -56,6 +65,11 @@ bool App::Init()
 		return false;
 	}
 	return true;
+}
+
+void App::Render()
+{
+	mImpl->Render();
 }
 
 /*_________EOF_______________________________________________________________*/

@@ -15,7 +15,12 @@ public:
 	Renderer(HWND hWnd, int w, int h);
 	virtual ~Renderer();
 
-	virtual bool Init();
+	void Clear();
+	void Swap();
+	void Begin();
+	void End();
+
+	bool Init();
 
 private:
 	struct Impl;

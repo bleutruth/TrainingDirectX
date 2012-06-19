@@ -15,9 +15,11 @@ public:
 	App(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow);
 	virtual ~App();
 
+	void Render();
+
 private:
 
-	virtual bool Init();
+	bool Init();
 
 	struct Impl;
 	std::auto_ptr<Impl> mImpl;

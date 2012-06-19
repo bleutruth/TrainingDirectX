@@ -17,6 +17,7 @@ public:
 
 	//! アプリケーション実行
 	bool Run();
+	virtual void Render(){}
 
 	Window* Window() const;
 
