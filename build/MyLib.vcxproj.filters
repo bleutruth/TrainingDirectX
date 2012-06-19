@@ -6,15 +6,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\common\stdafx.cpp">
+    <ClCompile Include="..\src\MyLib\stdafx.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\common\stdafx.h">
+    <ClInclude Include="..\src\MyLib\stdafx.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\common\targetver.h">
+    <ClInclude Include="..\src\MyLib\targetver.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
